@@ -1,0 +1,124 @@
+
+   *{
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    background-color: palevioletred;
+}
+
+nav{
+    position: fixed;
+    top:0;
+    height: 100px;
+    width: 100%;
+    z-index: 1;
+    background-color:rebeccapurple ;
+    border-bottom: 1px solid #ccc;
+}
+nav::after{
+    clear: both;
+    content: "";
+    display: block;
+}
+.nave{
+    max-width: 1200px;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+ #logo{
+width: 80px;
+height: 80px;
+margin-top: 15px;
+}
+
+.nave ul {
+    float: right;
+    height: 100px;
+    line-height: 100px;
+    margin: 0;
+
+}
+.nave li{
+    list-style: none;
+    float: left;
+    margin: 0 15 px;
+}
+.nave li a{
+    padding-left: 50px;
+    text-decoration: none;
+    color: white;
+    transition: 300ms;
+}
+.nave li a:hover{
+    color: aqua;
+}
+
+img{
+    width: 300px;
+    height: 350px;
+      
+   }
+  
+
+.imagem{
+display:flex; /*deixa os elementos de display block em linha ocupando somento o tamanho pré estabelecido*/
+justify-content: center; /*alinha elementos na horizontal*/
+align-items: center; /*alinha elementos na verdical*/
+height: 100%; /*ou 100vh*/
+}
+
+h2{
+    color:white;
+}
+
+.video{
+    display:flex; /*deixa os elementos de display block em linha ocupando somento o tamanho pré estabelecido*/
+    flex-direction: column;
+    justify-content: center; /*alinha elementos na horizontal*/
+    align-items: center; /*alinha elementos na verdical*/
+    height: 100%; /*ou 100vh*/
+    }
+
+    .footer{
+        background-color: rgb(140, 0, 255);
+        border-top: 1px solid #ccc; ;
+    }
+
+    .texto-footer p {
+        display:flex; /*deixa os elementos de display block em linha ocupando somento o tamanho pré estabelecido*/
+        flex-direction: column;  /*deixa os elementos de display block em coluna ocupando somento o tamanho pré estabelecido*/
+        justify-content: center; /*alinha elementos na horizontal*/
+        align-items: center; /*alinha elementos na verdical*/
+        height: 100%; /*ou 100vh*/
+        padding-top: 5px;
+         margin: 0;
+      
+        font-size: 16px;
+        color:white;
+        
+    }
+    .texto-footer img{
+        width: 100px;
+        height: 50px;
+    }
+
+    .link-footer {
+        display:flex; /*deixa os elementos de display block em linha ocupando somento o tamanho pré estabelecido*/
+        flex-wrap: nowrap;/*deixa os elementos de display block em linha ocupando somento o tamanho pré estabelecido porem ele tenta colocar todos os elementos na linha fazendo com que o tamanho do elemento seja modificado*/
+        justify-content:center; /*alinha elementos na horizontal*/
+        align-items: center; /*alinha elementos na verdical*/
+         height: 100%; /*ou 100vh*/
+    }
+
+    a{ 
+        padding-left: 40px
+    }
